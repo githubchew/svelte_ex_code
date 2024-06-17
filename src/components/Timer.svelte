@@ -1,14 +1,14 @@
 <script>
-  import {time} from  '../stores.jsx' 
+  import {time ,elapsedTime} from '../store/stores'
 
-const dateFormatter = new Intl.DateTimeFormat('en', {
-  hour12: true,
+const dateFormatter = new Intl.DateTimeFormat('en',{
+  //hour12: true,
   hour: 'numeric',
   minute: '2-digit',
   second: '2-digit',
 })
 </script>
 
-<h2>Trhe time is {dateFormatter.format($time)}</h2>
+<h2>The Time is {dateFormatter.format($time)}</h2>
 
-<h2>from Timer.svelte</h2>
+<h2>You've been viewing this page for {$elapsedTime}</h2>
