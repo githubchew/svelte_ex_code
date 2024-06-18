@@ -8,5 +8,4 @@
       + add item
     </button>
 
-    asdfsa
   </nav>

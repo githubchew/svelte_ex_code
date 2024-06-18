@@ -1,8 +1,8 @@
 <script>
   import Navbar from "./Navbar.svelte"
-
+  import Title from "./Title.svelte"
 </script>
 
 <Navbar />
-
-<h1>test new git alias</h1>
+<Title title="title 1" />
+<Title title="title 2 here" />
