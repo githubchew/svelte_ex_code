@@ -6,6 +6,7 @@
 
 <Navbar />
 
-{#each fruites as item}
-
+{#each fruits as item}
+<Title title={item}/>
+ <h3> {item}</h3>
 {/each}
