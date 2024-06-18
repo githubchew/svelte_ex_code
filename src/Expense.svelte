@@ -5,9 +5,18 @@
   export let amount = 0;
 </script>
 
-<div>
-  <h4>id: {id}</h4>
-<h2>title: {name}</h2>
-<h2>amount: {amount}</h2>
-<hr style="border-top:2px gray dashed">
-</div>
+<article class="single-expense">
+
+    <div class="expense-info">
+      <h2>
+        {name}
+        <button class="amount-btn">
+          amnt 
+        </button>
+      </h2>
+      <h4>amount: ${amount}</h4>
+      <button class="expense-btn edit-btn">edit</button>
+      <button class="">delete</button>
+    </div>
+
+</article>
