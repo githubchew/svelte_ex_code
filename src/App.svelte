@@ -1,14 +1,18 @@
 <script>
   import Navbar from "./Navbar.svelte"
   import expenseData from "./expenses"
-  let expenses = [...expenseData]
   import ExpenseList from "./ExpensesList.svelte";
+  let expenses = [...expenseData]
+  //functions
+  function removeExpense(id) {
+    expenses = expenses.filter(item => item.id != id)
+  }
 
 </script>
 
 <Navbar />
 <main class="content">
-  <ExpenseList expenses={expenses}/>
+  <ExpenseList expenses={expenses} {removeExpense}/>
 </main>
 
 
