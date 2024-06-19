@@ -10,7 +10,8 @@
 
   {#each expenses as expense, index}
   <Expense {...expense} on:deleteMe  />
-
+    {:else}
+    <h2 style="color:yellowgreen">no expenses added</h2>
   {/each}
 
   </ul>
