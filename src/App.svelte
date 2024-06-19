@@ -4,6 +4,7 @@
   import expenseData from "./expenses"
   import ExpenseList from "./ExpensesList.svelte";
   import Totals from './Totals.svelte'
+  import ExpenseForm  from './ExpenseForm.svelte';
   let expenses = [...expenseData]
   // reactive
   $:total = expenses.reduce(   (acc,curr)=>{
@@ -32,6 +33,7 @@
 
 <Navbar />
 <main class="content">
+  <ExpenseForm />
   <Totals title="total expenses" {total} />
   <ExpenseList expenses={expenses} on:deleteMe
   ={deleteExpense} />
