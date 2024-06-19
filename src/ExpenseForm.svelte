@@ -32,6 +32,13 @@
     
 
 
-<button type="submit" style="padding:5px; margin:10px auto;display:block;width:80%"> add expense</button>
+<button type="submit" class:disabled={isEmpty} disabled={isEmpty}> add expense</button>
  </form>
 </section>
+
+
+<style>
+  .disabled{
+    color:pink;
+  }
+</style>
