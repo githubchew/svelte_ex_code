@@ -9,7 +9,7 @@
   }
   
 </script>
-
+<br />
 <p>name:{name}</p>
 <p>amount:{amount}</p>
 <section>
@@ -35,7 +35,7 @@
 <button type="submit" class:disabled={isEmpty} disabled={isEmpty}> add expense</button>
  </form>
 </section>
-
+<br />
 
 <style>
   .disabled{

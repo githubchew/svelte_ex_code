@@ -33,6 +33,7 @@
 
 <Navbar />
 <main class="content">
+  <p>below expennse form</p>
   <ExpenseForm />
   <Totals title="total expenses" {total} />
   <ExpenseList expenses={expenses} on:deleteMe
