@@ -9,6 +9,7 @@
   }
   const removeExpense = getContext("remove")
   const dispatch = createEventDispatcher();
+  const setModifiedExpense = getContext("modify")
 </script>
 
 <article class="single-expense">
@@ -20,12 +21,14 @@
           toogleAmount 
         }>
           amnt 
-        </button>
+          </button>
       </h2>
       {#if displayAmount}
       <h4>amount: ${amount}</h4>
       {/if}
-      <button class="expense-btn edit-btn">edit</button>
+      <button class="expense-btn edit-btn" on:click={
+        ()=>setModifiedExpense(id)
+      }>edit</button>
       <button class="" on:click={removeExpense(id)}>delete</button>
       <button on:click={()=> dispatch('deleteMe',{id,name:"hello disp"})}>delte disp</button>
     </div>
