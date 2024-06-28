@@ -2,9 +2,21 @@
   import Player from './Player.svelte'
   let redScore = 20
   let blueScore = 233
-  let blueWon = true
-  let redWon = true
-  let gameOver  = true;
+  $:  blueWon = redScore <=0
+  let redWon = blueScore <=0
+  let gameOver  = blueWon || redWon;
+
+  function updateBlueScore(e){
+    console.log(e.detail)
+    const updateBlueScore = e.detail;
+    blueScore += updateBlueScore;
+    console.log(blueScore)
+  }
+  function newGame(){
+    alert("new Game")
+    redScore = 20
+    blueScore = 0
+  }
 </script>
 //------------------------------------------------------@29:00
 <main>
@@ -12,14 +24,16 @@
   <h1>Magic the Gathering Counter App</h1>
   <div id="controls-container">
     //BLUE
-    <Player {gameOver}
+    <Player 
+    {gameOver}
+    on:points={updateBlueScore}
     fontColor="00A" won={blueWon} winningText="blue wins"
     score={blueScore} />
     //RED 
     <Player  {gameOver}
     fontColor="A00" won={redWon} winningText="red w" score={redScore} />
   </div>
-  <button>Start Game</button>
+  <button on:click={newGame}>Start Game</button>
 
 </main>
 
