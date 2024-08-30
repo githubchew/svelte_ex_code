@@ -1,9 +1,16 @@
 <script>
+  import {invoices, loadInvoices} from "$lib/stores/InvoicesStore"
+  import {onMount} from 'svelte';
   import CircledAmount from '$lib/components/CircledAmount.svelte';
   import ThreeDots from '$lib/components/Icon/ThreeDots.svelte';
   import View from '$lib/components/Icon/View.svelte';
   import Search from '$lib/components/Search.svelte';
   import Tag from '$lib/components/Tag.svelte';
+
+onMount(()=>{
+  loadInvoices();
+  console.log($invoices);
+})
 </script>
 
 <svelte:head>
