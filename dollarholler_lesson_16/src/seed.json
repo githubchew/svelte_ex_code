@@ -25,7 +25,7 @@
           "quantity": 1
         },
         {
-          "amount": 200,
+          "amount": 2000000,
           "description": "Podcast Episode #2",
           "id": "2",
           "quantity": 1
@@ -33,6 +33,41 @@
       ],
       "notes": "Some notes",
       "subject": "Podcast",
+      "terms": "_Pay_ me."
+    },
+    {
+      "client": {
+        "clientStatus": "active",
+        "city": "Somewhereville",
+        "email": "compressed@example.com",
+        "id": "1",
+        "name": "no noname",
+        "state": "TN",
+        "street": "123 Main Street",
+        "zip": "12345"
+      },
+      "createdAt": "2022-07-01",
+      "dueDate": "2022-07-21",
+      "id": "1",
+      "invoiceNumber": "12345",
+      "invoiceStatus": "draft",
+      "issueDate": "2022-07-01",
+      "lineItems": [
+        {
+          "amount": 1010,
+          "description": "Podcast Episode #3",
+          "id": "12223",
+          "quantity": 1
+        },
+        {
+          "amount": 2100,
+          "description": "Podcast Episode #331",
+          "id": "212",
+          "quantity": 1121
+        }
+      ],
+      "notes": "Some notsddes",
+      "subject": "Podcasdasdt",
       "terms": "_Pay_ me."
     },
     {
