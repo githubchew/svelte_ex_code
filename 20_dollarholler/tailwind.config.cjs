@@ -12,7 +12,7 @@ module.exports = {
         circle: "url('/images/circle.svg')"
       },
       borderWidth: {
-        '1': '1px',
+        1: '1px'
       },
       boxShadow: {
         colored: '0px 7px 16px rgba(127, 91, 220, 0.002)',
@@ -20,29 +20,30 @@ module.exports = {
         tableRow: '0px 0px 6px rgba(0, 0, 0, 0.16)'
       },
       colors: {
-        lavenderIndigo: '#8657e1',
+        blueGem: '#3813a0',
+        caribbeanGreen: '#00ca9e',
+        caribbeanGreen: '#1CC6A0',
         daisyBush: '#4714a5',
+        fog: '#decaec',
+        gallery: '#efeaf2',
         goldenFizz: '#feff40',
-        whisper: '#f9f4f9',
+        lavenderIndigo: '#8657e1',
+        monsoon: '#777878',
         pastelPurple: '#b2a1bb',
+        prim: '#ccc0dc',
         purple: '#7209b7',
         robinEggBlue: '#00e9c0',
-        blueGem: '#3813a0',
-        caribbeanGreen: '#1CC6A0',
         scarlet: '#f72f45',
-        monsoon: '#777878',
         silver: '#c0c0c0',
-        gallery: '#efeaf2',
-        caribbeanGreen: '#00ca9e',
-        fog: '#decaec',
+        whisper: '#f9f4f9'
       },
       gridTemplateColumns: {
-        'invoiceTable': '100px 100px 60px 1fr 116px 32px 32px',
-        'invoiceTableMobile': "1fr 90px"
+        invoiceTable: '100px 100px 60px 1fr 116px 32px 32px',
+        invoiceTableMobile: '1fr 90px'
       },
       zIndex: {
         navBarToggle: 91,
-        navBar: 90,
+        navBar: 90
       }
     }
   },
