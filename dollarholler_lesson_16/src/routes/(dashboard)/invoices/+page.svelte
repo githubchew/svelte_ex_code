@@ -6,6 +6,8 @@
   import Search from '$lib/components/Search.svelte';
   import Tag from '$lib/components/Tag.svelte';
     import InvoiceRow from "./InvoiceRow.svelte";
+    import { sumInvoices } from "$lib/utils/moneyHelpers";
+    import {centsToDollars } from '$lib/utils/moneyHelpers';
 
 onMount(()=>{
   loadInvoices();
@@ -51,7 +53,7 @@ onMount(()=>{
 <InvoiceRow {invoice} />
 {/each}
 
-<CircledAmount label="Total" amount="$1,144.00" />
+<CircledAmount label="Total" amount={`$ ${centsToDollars(sumInvoices($invoices) )} ` }/>
 
 
 
